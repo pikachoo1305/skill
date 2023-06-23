@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="left-panel">
-      <h2>Добавление нового навыка</h2>
+      <h2>Добавление нового навыка!</h2>
       <form @submit.prevent="addSkill">
         <div class="form-group">
           <label for="skillName">Название навыка</label>
