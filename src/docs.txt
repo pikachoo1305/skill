@@ -1,0 +1,47 @@
+<template>
+  <div>
+    <div class="row">
+      <div class="column">
+        <!-- Форма добавления нового навыка -->
+        <form @submit.prevent="addSkill">
+          <!-- поля ввода навыка -->
+          <!-- ... -->
+
+          <!-- кнопка "Добавить навык" -->
+          <button type="submit">Добавить навык</button>
+        </form>
+      </div>
+      <div class="column">
+        <!-- Список навыков -->
+        <ul>
+          <li v-for="skill in skills" :key="skill.name">
+            <!-- отображение информации о навыке -->
+            <!-- ... -->
+
+            <!-- кнопка для удаления навыка -->
+            <button @click="removeSkill(skill)">Удалить</button>
+          </li>
+        </ul>
+
+        <!-- Кнопка для обнуления всех навыков -->
+        <button @click="resetSkills">Обнулить все навыки</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+</style>
+
+<script>
+export default {
+  // ...
+};
+</script>
